@@ -34,7 +34,7 @@
 
 ​      <for variable="Length" start="0" end="len(value)-1" direction="inc" step="1"> 
 
-​        <assign variable="Total" expression="Total+Tointeger(Char(value,length))^3"/>
+​        <assign variable="Total" expression="Total+Tointeger(Char(value,length))^4"/>
 
 ​      </for>
 
