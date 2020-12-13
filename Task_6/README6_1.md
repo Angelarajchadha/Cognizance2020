@@ -32,7 +32,7 @@
 
 ​      <declare name="Length" type="Integer" array="False" size="" variables="Length"/>
 
-​      <for variable="Length" start="0" end="len(value)-1" direction="inc" step="1">
+​      <for variable="Length" start="0" end="len(value)-1" direction="inc" step="1"> 
 
 ​        <assign variable="Total" expression="Total+Tointeger(Char(value,length))^3"/>
 
