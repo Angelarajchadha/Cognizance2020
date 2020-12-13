@@ -1,7 +1,7 @@
 ## *Pseudo code for Armstrong Number* 
 <br>
 
-**START**
+**START** 
 
 **DECLARE** Variable Integer Total
 
