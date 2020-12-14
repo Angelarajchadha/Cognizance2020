@@ -13,7 +13,7 @@ Enter Value (I/O)
 
 **FOR** Length = 0 to Value-1
 
- Total= Total +Integer(Value,length)^3
+ Total= Total +Integer(Value,length)^4
 
 **IF** Total=Integer(Value)
 
