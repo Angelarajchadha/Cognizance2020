@@ -1,0 +1,36 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Solution
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+		while(t-->0)
+		{
+		    double b = sc.nextDouble(), c = sc.nextDouble();
+		    double low=0.0, high=Math.PI/2, x=(high+low)/2, lhs=(x*x+b*x+c), rhs=(2*x+b)*Math.tan(x);
+		    while(Math.abs(lhs-rhs)>0.0000001)
+		    {
+		        if(lhs>rhs)
+		        {
+		            low = x;
+		        }
+		        else
+		        {
+		            high = x;
+		        }
+		        x=(high+low)/2;
+		        lhs=(x*x+b*x+c);
+		        rhs=(2*x+b)*Math.tan(x);
+		    }
+		    double res = (x*x + b*x + c)/Math.sin(x);
+		    System.out.println(res);
+		}
+	}
+}
