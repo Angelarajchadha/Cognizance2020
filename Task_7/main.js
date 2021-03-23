@@ -5,10 +5,9 @@
 Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
-// for send function to select input
-// for send function to select input
-var message = prompt("Enter the message");
-var count = prompt("Enter the Number of times");  
+<script>
+var message = ("Enter the message");
+var count = ("Enter the Number of times");  
 var looper = 0;
 for(looper=0;
    looper<count; 
@@ -24,3 +23,4 @@ for(looper=0;
     var b = document.querySelectorAll('#main > footer > div.vR1LG._3wXwX.copyable-area > div:nth-child(3) > button')[0]
     b.click();
 }
+</script>
