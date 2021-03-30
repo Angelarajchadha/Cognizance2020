@@ -1,26 +1,16 @@
-/******************************************************************************
+var message = ("Enter the Message"); 
+var interval = 3  ;
+var count = 100 ;
+var notifyInterval = 5 ; 
+var i = 0 ;
+var timer = setInterval(function(){
+	document.getElementsByClassName('composer_rich_textarea')[0].innerHTML = message;
+	$('.im_submit').trigger('mousedown');	
+	i++;
+	if( i  == count )
+	clearInterval(timer);
+	if( i % notifyInterval == 0)
+	console.log(i + ' MESSAGES SENT');
+} , interval * 1000 ) ;
 
-                            Online Javascript Interpreter.
-                Code, Compile, Run and Debug javascript program online.
-Write your code in this editor and press "Run" button to execute it.
 
-*******************************************************************************/
-<script>
-var message = ("Enter the message");
-var count = ("Enter the Number of times");  
-var looper = 0;
-for(looper=0;
-   looper<count; 
-    looper++)
-{
-    window.InputEvent = window.Event || window.InputEvent;
-    var d = new Date();
-    var event = new InputEvent('input', {bubbles: true});
-    var textbox= document.querySelector('#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text');
-    
-    textbox.textContent = message;
-    textbox.dispatchEvent(event);
-    var b = document.querySelectorAll('#main > footer > div.vR1LG._3wXwX.copyable-area > div:nth-child(3) > button')[0]
-    b.click();
-}
-</script>
