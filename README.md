@@ -13,8 +13,8 @@
 | 8.   | Task_7  | Completed          |
 | 9.   | Task_8  | Completed          |
 | 10.  | Task_9  | Completed          |
-| 11.  | Task_10 | Incomplete         |
-| 12.  | Task_11 | Completed          |
+| 11.  | Task_10 | Completed          |
+| 12.  | Task_11 | InCompleted        |
 | 13.  | Task_12 | Completed          |
 | 14.  | Task_13 | Completed          |
 
